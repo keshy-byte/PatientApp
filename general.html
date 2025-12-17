@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Patient Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>General Patient Info</h1>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">PatientApp</span>
+            <ul class="nav-links">
+                <li><a href="register.html">Register</a></li>
+                <li><a href="vitals.html">Vitals</a></li>
+                <li><a href="general.html">General</a></li>
+                <li><a href="overweight.html">Overweight</a></li>
+                <li><a href="patients.html">Patients</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form id="generalForm">
+        <label for="patientId">Patient ID:</label>
+        <input type="number" id="patientId" name="patientId" required><br><br>
+
+        <label for="health">Health Status:</label>
+        <select id="health" name="health" required>
+            <option value="">--Select--</option>
+            <option value="Poor">Poor</option>
+            <option value="Good">Good</option>
+        </select><br><br>
+
+        <label for="drugs">Drugs:</label>
+        <select id="drugs" name="drugs" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="3" placeholder="Additional notes..." required></textarea><br><br>
+
+        <button type="submit">Save General Assessment</button>
+    </form>
+
+</body>
+</html>

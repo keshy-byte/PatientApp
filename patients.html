@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Patient Listing</h1>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">PatientApp</span>
+            <ul class="nav-links">
+                <li><a href="register.html">Register</a></li>
+                <li><a href="vitals.html">Vitals</a></li>
+                <li><a href="general.html">General</a></li>
+                <li><a href="overweight.html">Overweight</a></li>
+                <li><a href="patients.html">Patients</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Date Filter -->
+    <label for="filterDate">Filter by Visit Date:</label>
+    <input type="date" id="filterDate">
+    <button onclick="filterPatients()">Filter</button>
+
+    <!-- Patient Table -->
+    <table id="patientsTable" border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Age</th>
+                <th>Last BMI</th>
+                <th>BMI Classification</th>
+            </tr>
+        </thead>
+        <tbody id="patientsBody">
+            <!-- Patients will be rendered here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="patients.js"></script>
+</body>
+</html>
